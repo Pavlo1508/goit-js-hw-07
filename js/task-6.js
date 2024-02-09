@@ -40,6 +40,10 @@ function onCreteBtnClick() {
 		}
 		input.value = '';
 	}
+	else {
+		input.value = '';
+		boxes.innerHTML = '';
+	}
 }
 
 function onDestroyBtnClick() {
