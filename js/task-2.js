@@ -27,3 +27,21 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
+
+const gallery = document.querySelector('.gallery');
+const markup = images.map(createGallerysItems).join('\n\n')
+
+function createGallerysItems(obj) {
+	const imgLink = obj.url;
+	const alt = obj.alt;
+
+	return `<li class="gallery-item">
+				<img class="gallery-item-img" src="${imgLink}" alt="${alt}">
+			</li>`;
+}
+
+gallery.innerHTML = markup;
+
+
+
