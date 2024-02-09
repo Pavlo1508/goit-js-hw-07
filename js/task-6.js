@@ -25,7 +25,7 @@ function onInput() {
 }
 
 function onCreteBtnClick() {
-	if (numberToUse >= 1 && numberToUse <= 100) {
+	if (numberToUse >= 1 && numberToUse <= 100 && input.value !== '') {
 		boxes.innerHTML = '';
 		let size = 30;
 		for (let i = 0; i < numberToUse; i++) {
